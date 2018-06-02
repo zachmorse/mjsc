@@ -1,0 +1,9 @@
+.soccerBackground {
+  background-image: url('../assets/graphics/christian-widell-101891-unsplash.jpg');
+  /* background-size: 100%; */
+  background-attachment: fixed;
+}
+
+.homeLogoControl {
+  width: 50%;
+}
