@@ -17,6 +17,7 @@ export default class Home extends Component {
   };
 
   componentDidMount() {
+    document.title = 'Home | Mount Juliet Soccer Club';
     this.setState({
       imageHeight: window.innerHeight
     });
@@ -73,20 +74,20 @@ export default class Home extends Component {
             </a>
             <p className="is-size-6-mobile secondaryFont">
               Join the MJSC Facebook group page and stay up to date on announcements, registration
-              dates, and news
+              dates, and news. New happenings can be found on our facebook, under the events tab!
             </p>
             <a href="https://twitter.com/mtjulietsoccerc" target="blank">
               <img src={twitterLogo} className="socialIcons" alt="twitter logo" />
             </a>
             <p className="is-size-6-mobile secondaryFont">
-              Follow us on Twitter for the latest updates
+              Follow us on Twitter for the latest updates.
             </p>
             <a href="https://www.instagram.com/mountjulietsoccerclub/" target="blank">
               <img src={instagramLogo} className="socialIcons" alt="instagram logo" />
             </a>
 
             <p className="is-size-6-mobile secondaryFont">
-              And be sure to follow us on Instagram for great action shots!
+              Finally, be sure to follow us on Instagram for great action shots!
             </p>
           </div>
         </section>
