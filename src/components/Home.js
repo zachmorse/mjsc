@@ -54,9 +54,7 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-        <section className="section has-text-centered">
-          <div>REGISTRATION STUFF</div>
-        </section>
+        {/* <section className="section has-text-centered" /> */}
         <section className="section has-text-centered">
           <div className="box has-text-centered-mobile">
             <h1 className="is-size-2">Where to Find Us</h1>
@@ -86,6 +84,7 @@ export default class Home extends Component {
             <a href="https://www.instagram.com/mountjulietsoccerclub/" target="blank">
               <img src={instagramLogo} className="socialIcons" alt="instagram logo" />
             </a>
+
             <p className="is-size-6-mobile secondaryFont">
               And be sure to follow us on Instagram for great action shots!
             </p>

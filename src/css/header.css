@@ -10,6 +10,10 @@
   height: 3rem;
 }
 
+.navbar-burger {
+  height: 64px;
+}
+
 .navbar-item img {
   max-height: 3rem;
 }
