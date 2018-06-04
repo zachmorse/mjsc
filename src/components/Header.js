@@ -49,10 +49,10 @@ export default class Header extends Component {
             <NavLink to="/franchise" className="navbar-item" onClick={this.handleNavbar}>
               Franchise
             </NavLink>
-            <NavLink to="/scholarships" className="navbar-item" onClick={this.handleNavbar}>
+            <NavLink to="/scholarship" className="navbar-item" onClick={this.handleNavbar}>
               Scholarships
             </NavLink>
-            <NavLink to="/sponsors" className="navbar-item" onClick={this.handleNavbar}>
+            <NavLink to="/sponsorship" className="navbar-item" onClick={this.handleNavbar}>
               Become a Sponsor!
             </NavLink>
             <NavLink to="/contact" className="navbar-item" onClick={this.handleNavbar}>
