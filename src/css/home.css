@@ -1,9 +1,69 @@
+/* ----------------------------- */
+/* ------- INITIAL Layout ------ */
+/* ----------------------------- */
+
 .soccerBackground {
-  background-image: url('../assets/graphics/christian-widell-101891-unsplash.jpg');
-  /* background-size: 100%; */
-  background-attachment: fixed;
+  background-image: url('../assets/graphics/phil-goodwin-96377-unsplash.jpg');
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(0.75);
+  height: 100vh;
+  margin-top: 64px;
 }
 
 .homeLogoControl {
   width: 50%;
+}
+
+.overlayControl {
+  position: absolute;
+  top: 64px;
+  padding: 2rem 2rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.socialIcons {
+  width: 50%;
+  margin: 1rem 0rem;
+}
+
+/* ----------------------------- */
+/* ------- MOBILE Layout ------- */
+/* ----------------------------- */
+
+@media screen and (max-width: 768px) {
+}
+
+/* ----------------------------- */
+/* ------- TABLET Layout ------- */
+/* ----------------------------- */
+
+@media screen and (min-width: 769px) {
+}
+
+/* ----------------------------- */
+/* ------- DESKTOP Layout ------ */
+/* ----------------------------- */
+
+@media screen and (min-width: 1024px) {
+}
+
+/* ----------------------------- */
+/* ------- WIDESCREEN Layout --- */
+/* ----------------------------- */
+
+@media screen and (min-width: 1216px) {
+}
+
+/* ----------------------------- */
+/* ------- FULL HD Layout ------ */
+/* ----------------------------- */
+
+@media screen and (min-width: 1408px) {
 }

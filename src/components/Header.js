@@ -9,11 +9,11 @@ export default class Header extends Component {
     return (
       <div>
         <nav className="navbar is-fixed-top">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="/">
+          <div className="navbar-brand">
+            <a className="navbar-item" href="/">
               <img src={mjscLogo} className="navbarLogo" alt="" />
             </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
               <span aria-hidden="true" />
               <span aria-hidden="true" />
               <span aria-hidden="true" />

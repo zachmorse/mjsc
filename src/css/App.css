@@ -1,12 +1,66 @@
+@font-face {
+  font-family: 'ProximaNovaThin';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Thin-webfont.ttf');
+}
+
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.ttf');
+}
+
+@font-face {
+  font-family: 'ProximaNovaSemiBold';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Semibold-webfont.ttf');
+}
+
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Bold-webfont.ttf');
+}
+
+@font-face {
+  font-family: 'ProximaNovaExtraBold';
+  src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Black-webfont.ttf');
+}
+
 html {
   background-color: #efefef;
 }
 
 body {
   min-width: 320px;
-  max-width: 1280px;
+  max-width: 1344px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
   box-shadow: 1px 6px 20px rgba(0, 0, 0, 0.1), -1px 6px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'ProximaNovaRegular';
+}
+
+.georgiaFont {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.secondaryFont {
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.thinFont {
+  font-family: 'ProximaNovaThin';
+}
+
+.semiBoldFont {
+  font-family: 'ProximaNovaSemiBold';
+}
+
+.boldFont {
+  font-family: 'ProximaNovaBold';
+}
+
+.boldestFont {
+  font-family: 'ProximaNovaExtraBold';
+}
+
+.bodyMargin {
+  margin-top: 64px;
 }
