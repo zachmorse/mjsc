@@ -64,3 +64,8 @@ body {
 .bodyMargin {
   margin-top: 64px;
 }
+
+.container {
+  width: 100%;
+  max-width: 1344px;
+}

@@ -1,25 +1,26 @@
 /* ----------------------------- */
-/* ------- INITIAL Layout ------ */
+/* - INITIAL and MOBILE layout - */
 /* ----------------------------- */
 
 .soccerBackground {
   background-image: url('../assets/graphics/phil-goodwin-96377-unsplash.jpg');
-  display: block;
   background-size: cover;
-  background-repeat: no-repeat;
-  filter: brightness(0.75);
-  height: 100vh;
+  background-repeat: no-repeat !important;
+  filter: brightness(0.7);
+  height: 100%;
   margin-top: 64px;
 }
 
 .homeLogoControl {
-  width: 50%;
+  width: 60%;
+  max-width: 250px;
+  margin-bottom: 1rem;
 }
 
 .overlayControl {
   position: absolute;
   top: 64px;
-  padding: 2rem 2rem;
+  padding: 2.5rem;
 }
 
 .hero {
@@ -30,14 +31,14 @@
 
 .socialIcons {
   width: 50%;
+  max-width: 250px;
   margin: 1rem 0rem;
 }
 
-/* ----------------------------- */
-/* ------- MOBILE Layout ------- */
-/* ----------------------------- */
-
-@media screen and (max-width: 768px) {
+.googleMapEmbed {
+  width: 60vw;
+  height: 40vw;
+  margin-bottom: 0.75rem;
 }
 
 /* ----------------------------- */
@@ -45,6 +46,9 @@
 /* ----------------------------- */
 
 @media screen and (min-width: 769px) {
+  ul {
+    list-style: none;
+  }
 }
 
 /* ----------------------------- */

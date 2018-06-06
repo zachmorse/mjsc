@@ -11,18 +11,26 @@ export default class Home extends Component {
     imageHeight: window.innerHeight
   };
 
+  componentDidMount() {
+    document.title = 'Home | Mount Juliet Soccer Club';
+    window.addEventListener('scroll', this.handleResize);
+    window.addEventListener('resize', this.handleResize);
+    this.initializeBackgroundHeight();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize);
+  }
+
   handleResize = () => {
     let targetHeight = document.getElementById('heightTarget').clientHeight;
     this.setState({ imageHeight: targetHeight });
   };
 
-  componentDidMount() {
-    document.title = 'Home | Mount Juliet Soccer Club';
-    this.setState({
-      imageHeight: window.innerHeight
-    });
-    window.addEventListener('resize', this.handleResize);
-  }
+  initializeBackgroundHeight = () => {
+    let setting = window.innerHeight;
+    this.setState({ imageHeight: setting });
+  };
 
   render() {
     return (
@@ -32,36 +40,50 @@ export default class Home extends Component {
             className="soccerBackground is-marginless"
             style={{ height: this.state.imageHeight }}
           />
-          <div id="heightTarget" className="container has-text-centered content overlayControl">
+          <div
+            id="heightTarget"
+            className="container has-text-centered has-text-white content overlayControl"
+          >
             <img src={mjscLogo} className="homeLogoControl" alt="" />
-            <p className="is-size-1 is-size-3-mobile has-text-white semiBoldFont">
+            <p className="is-size-3-mobile is-size-2-tablet has-text-white semiBoldFont titleControl">
               The USA's Premier Private Soccer Training
             </p>
-            <p className="is-size-3 is-size-4-mobile has-text-white semiBoldFont">
+            <p className="is-size-4-mobile is-size-4-tablet semiBoldFont">
               Improve your skills while learning to play the game the right way!
             </p>
-            <p className="is-size-4 is-size-5-mobile has-text-white secondaryFont">
+            <p className="is-size-5-mobile is-size-4-tablet secondaryFont">
               Mount Juliet Soccer Club provides soccer training clinics for groups and individuals
               of all age groups. With hands on training from one of Scotland's top coaches, players
               learn:
             </p>
-            <div className="content has-text-white has-text-left-mobile">
-              <ul>
+            <div className="content has-text-left-mobile is-hidden-tablet">
+              <ul className="bulletPoints">
                 <li>Proper position strategy and technique</li>
                 <li>Dribbling and shooting</li>
                 <li>Decision making</li>
                 <li>Team work and communication</li>
               </ul>
             </div>
+            <div className="content is-hidden-mobile">
+              <p className="is-size-5-tablet bulletList">
+                Proper position strategy and technique{' '}
+                <span className="has-text-grey-light"> || </span> Dribbling and shooting
+              </p>
+              <p className="is-size-5-tablet">
+                {' '}
+                Decision making <span className="has-text-grey-light"> || </span> Team work and
+                communication
+              </p>
+            </div>
           </div>
         </div>
-        {/* <section className="section has-text-centered" /> */}
         <section className="section has-text-centered">
           <div className="box has-text-centered-mobile">
             <h1 className="is-size-2">Where to Find Us</h1>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3218.6974507224736!2d-86.51258118419163!3d36.22254808007165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88643e1a59551c1f%3A0x7b4a1a5c02845f9c!2sCharlie+Daniels+Park!5e0!3m2!1sen!2sus!4v1519852794780"
               title="Charlie Daniels Park"
+              className="googleMapEmbed"
             />
             <p className="is-size-6-mobile secondaryFont">
               The MJSC Fields are located just east of Mt. Juliet Road, Mount Juliet, TN. Different
