@@ -1,0 +1,52 @@
+/* ----------------------------- */
+/* --- INITIAL MOBILE Layout --- */
+/* ----------------------------- */
+
+.scheduleContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 0rem;
+}
+
+.scheduleImage {
+  width: 100%;
+  height: 100%;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* ----------------------------- */
+/* ------- TABLET Layout ------- */
+/* ----------------------------- */
+
+@media screen and (min-width: 769px) {
+  .scheduleContainer {
+    padding-top: 1rem;
+  }
+}
+
+/* ----------------------------- */
+/* ------- DESKTOP Layout ------ */
+/* ----------------------------- */
+
+@media screen and (min-width: 1024px) {
+}
+
+/* ----------------------------- */
+/* ------- WIDESCREEN Layout --- */
+/* ----------------------------- */
+
+@media screen and (min-width: 1216px) {
+}
+
+/* ----------------------------- */
+/* ------- FULL HD Layout ------ */
+/* ----------------------------- */
+
+@media screen and (min-width: 1408px) {
+}
