@@ -70,7 +70,6 @@ export default class Home extends Component {
             <a href="https://www.instagram.com/mountjulietsoccerclub/" target="blank">
               <img src={instagramLogo} className="socialIcons" alt="instagram logo" />
             </a>
-
             <p className="is-size-6-mobile secondaryFont">Finally, be sure to follow us on Instagram for great action shots!</p>
           </div>
         </section>
