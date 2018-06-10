@@ -7,78 +7,61 @@ import twitterLogo from '../assets/graphics/twitter-logo.png';
 import instagramLogo from '../assets/graphics/new-instagram-text-logo.png';
 
 export default class Home extends Component {
-  state = {
-    imageHeight: window.innerHeight
-  };
-
-  componentDidMount() {
-    document.title = 'Home | Mount Juliet Soccer Club';
-    window.addEventListener('scroll', this.handleResize);
-    window.addEventListener('resize', this.handleResize);
-    this.initializeBackgroundHeight();
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleResize);
-  }
-
-  handleResize = () => {
-    let targetHeight = document.getElementById('heightTarget').clientHeight;
-    this.setState({ imageHeight: targetHeight });
-  };
-
-  initializeBackgroundHeight = () => {
-    let setting = window.innerHeight;
-    this.setState({ imageHeight: setting });
-  };
-
   render() {
     return (
       <div>
-        <div className="section is-marginless is-paddingless">
-          <div
-            className="soccerBackground is-marginless"
-            style={{ height: this.state.imageHeight }}
-          />
-          <div
-            id="heightTarget"
-            className="container has-text-centered has-text-white content overlayControl"
-          >
-            <img src={mjscLogo} className="homeLogoControl" alt="" />
-            <p className="is-size-3-mobile is-size-2-tablet has-text-white semiBoldFont titleControl">
-              The USA's Premier Private Soccer Training
-            </p>
-            <p className="is-size-4-mobile is-size-4-tablet semiBoldFont">
-              Improve your skills while learning to play the game the right way!
-            </p>
-            <p className="is-size-5-mobile is-size-4-tablet secondaryFont">
-              Mount Juliet Soccer Club provides soccer training clinics for groups and individuals
-              of all age groups. With hands on training from one of Scotland's top coaches, players
-              learn:
-            </p>
-            <div className="content has-text-left-mobile is-hidden-tablet">
-              <ul className="bulletPoints">
-                <li>Proper position strategy and technique</li>
-                <li>Dribbling and shooting</li>
-                <li>Decision making</li>
-                <li>Team work and communication</li>
-              </ul>
-            </div>
-            <div className="content is-hidden-mobile">
-              <p className="is-size-5-tablet bulletList">
-                Proper position strategy and technique{' '}
-                <span className="has-text-grey-light"> || </span> Dribbling and shooting
-              </p>
-              <p className="is-size-5-tablet">
-                {' '}
-                Decision making <span className="has-text-grey-light"> || </span> Team work and
-                communication
-              </p>
+        <section className="hero is-fullheight has-text-white">
+          <div className="hero-body is-paddingless">
+            <div className="overlayControl">
+              <img src={mjscLogo} className="homeLogoControl" alt="" />
+              <div className="titleMargin">
+                <p className="is-size-3-mobile is-size-2-tablet is-size-1-desktop has-text-white semiBoldFont titleControl">
+                  The USA's Premier Private Soccer Training
+                </p>
+                <p className="is-size-4-mobile is-size-4-tablet is-size-3-desktop semiBoldFont">
+                  Improve your skills while learning to play the game the right way!
+                </p>
+              </div>
+              <div className="content">
+                <p className="is-size-5-mobile is-size-4-tablet secondaryFont">
+                  Mount Juliet Soccer Club provides soccer training clinics for groups and
+                  individuals of all age groups. With hands on training from one of Scotland's top
+                  coaches, players learn:
+                </p>
+              </div>
+              <div className="content has-text-left-mobile is-hidden-tablet">
+                <ul className="bulletPoints">
+                  <li>Proper position strategy and technique</li>
+                  <li>Dribbling and shooting</li>
+                  <li>Decision making</li>
+                  <li>Team work and communication</li>
+                </ul>
+              </div>
+              <div className="content is-hidden-mobile">
+                <p className="is-size-5-tablet bulletList">
+                  Proper position strategy and technique{' '}
+                  <span className="has-text-grey-light">
+                    {' '}
+                    <i class="far fa-futbol"> </i>
+                  </span>{' '}
+                  Dribbling and shooting
+                </p>
+                <p className="is-size-5-tablet bulletList">
+                  {' '}
+                  Decision making{' '}
+                  <span className="has-text-grey-light">
+                    {' '}
+                    <i class="far fa-futbol" />
+                  </span>{' '}
+                  Team work and communication
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <section className="section has-text-centered">
-          <div className="box has-text-centered-mobile">
+        </section>
+
+        <section className="section">
+          <div className="box has-text-centered">
             <h1 className="is-size-2">Where to Find Us</h1>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3218.6974507224736!2d-86.51258118419163!3d36.22254808007165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88643e1a59551c1f%3A0x7b4a1a5c02845f9c!2sCharlie+Daniels+Park!5e0!3m2!1sen!2sus!4v1519852794780"
