@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+// import { AnimatedSwitch } from 'react-router-transition';
 import '../css/App.css';
 
 import MainLayout from './MainLayout';
@@ -12,12 +13,29 @@ import Sponsorship from './Sponsorship';
 import Contact from './Contact';
 
 class App extends Component {
+  componentTransitions = {
+    atEnter: {
+      opacity: 0
+    },
+    atLeave: {
+      opacity: 0
+    },
+    atActive: {
+      opacity: 1
+    }
+  };
+
   render() {
     return (
       <div>
         <BrowserRouter>
           <MainLayout>
             <Switch>
+              {/* <AnimatedSwitch
+              atEnter={this.componentTransitions.atEnter}
+              atLeave={this.componentTransitions.atLeave}
+              atActive={this.componentTransitions.atActive}
+            > */}
               <Route exact path="/" component={Home} />
               <Route path="/trainingschedule" component={TrainingSchedule} />
               <Route path="/about" component={AboutUs} />
@@ -26,6 +44,7 @@ class App extends Component {
               <Route path="/sponsorship" component={Sponsorship} />
               <Route path="/contact" component={Contact} />
             </Switch>
+            {/* </AnimatedSwitch> */}
           </MainLayout>
         </BrowserRouter>
       </div>

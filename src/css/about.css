@@ -3,7 +3,9 @@
 /* ----------------------------- */
 
 .masterBackgroundAbout {
-  background-image: url('../assets/graphics/phil-goodwin-96377-unsplash.jpg');
+  /* background-image: url('../assets/graphics/phil-goodwin-96377-unsplash.jpg'); */
+  /* background-image: url('../assets/graphics/juanma-batz-261226-unsplash.jpg'); */
+  background-image: url('../assets/graphics/wuilmar-matias-morales-591943-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat !important;
   background-attachment: fixed;
@@ -11,10 +13,13 @@
 }
 
 .aboutUsOverlayControl {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
   padding: 2rem 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .portraitContainer {
@@ -29,11 +34,20 @@
   max-height: 400px;
 }
 
+.homeLogoControl {
+  width: 70%;
+  max-width: 250px;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
 /* ----------------------------- */
 /* ------- TABLET Layout ------- */
 /* ----------------------------- */
 
 @media screen and (min-width: 769px) {
+  .homeLogoControl {
+    max-width: 300px;
+  }
 }
 
 /* ----------------------------- */
@@ -41,6 +55,9 @@
 /* ----------------------------- */
 
 @media screen and (min-width: 1024px) {
+  .homeLogoControl {
+    max-width: 400px;
+  }
 }
 
 /* ----------------------------- */

@@ -2,10 +2,9 @@
 /* ------- MOBILE Layout ------- */
 /* ----------------------------- */
 
-.cities {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.franchiseText {
+  padding: 1rem 20%;
+  margin: 1rem 0rem;
 }
 
 /* ----------------------------- */
