@@ -6,7 +6,7 @@
   background-image: url('../assets/graphics/phil-goodwin-96377-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat !important;
-  /* filter: brightness(0.7); */
+  
   height: 100%;
   margin-top: 64px !important;
 }

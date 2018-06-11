@@ -2,6 +2,12 @@
 /* ------- MOBILE Layout ------- */
 /* ----------------------------- */
 
+.cities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* ----------------------------- */
 /* ------- TABLET Layout ------- */
 /* ----------------------------- */

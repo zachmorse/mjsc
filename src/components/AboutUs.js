@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../css/about.css';
 
+import mjscLogo from '../assets/graphics/mjscLogo.png';
 import jamesPicken from '../assets/graphics/jamespicken.png';
 
 export default class AboutUs extends Component {
@@ -8,9 +9,7 @@ export default class AboutUs extends Component {
     return (
       <div className="masterBackgroundAbout">
         <div className="aboutUsOverlayControl">
-          {/* <div className="portraitContainer">
-            <img src={jamesPicken} className="pickenPortrait" alt="James Picken" />
-          </div> */}
+           <img src={mjscLogo} className="homeLogoControl" alt="" />
           <div className="content has-text-white">
             <h3 className="has-text-white">It’s no secret the sport of soccer is starting to grow in Middle Tennessee.</h3>
             <p>With the recent announcement of a professional soccer club potentially coming to Nashville, as well as the record-breaking attendance Nashville saw when it held a European professional game, it seems Middle Tennesseans are more interested in the sport than previously thought. Now, Mt. Juliet will be getting a soccer club coached by an award-winning soccer coach from England.</p>
