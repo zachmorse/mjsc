@@ -15,13 +15,13 @@ import Contact from './Contact';
 class App extends Component {
   componentTransitions = {
     atEnter: {
-      opacity: 0
+      blur: 10
     },
     atLeave: {
-      opacity: 0
+      blur: 10
     },
     atActive: {
-      opacity: 1
+      blur: 0
     }
   };
 

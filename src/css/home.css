@@ -6,7 +6,7 @@
   background-image: url('../assets/graphics/phil-goodwin-96377-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat !important;
-  
+
   height: 100%;
   margin-top: 64px !important;
 }
@@ -56,6 +56,10 @@
 
 .titleMargin {
   margin-bottom: 1rem;
+}
+
+.bulletPoints {
+  flex-direction: column;
 }
 
 /* ----------------------------- */

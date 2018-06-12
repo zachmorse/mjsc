@@ -1,10 +1,24 @@
 /* ----------------------------- */
 /* ------- MOBILE Layout ------- */
 /* ----------------------------- */
+.franchiseBackground {
+  /* background-image: url('../assets/graphics/phil-goodwin-96377-unsplash.jpg'); */
+  background-image: url('../assets/graphics/juanma-batz-261226-unsplash.jpg');
+  /* background-image: url('../assets/graphics/wuilmar-matias-morales-591943-unsplash.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed;
+}
 
 .franchiseText {
-  padding: 1rem 20%;
-  margin: 1rem 0rem;
+  padding: 1rem 5%;
+  margin: 0rem;
+  color: white;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
 }
 
 /* ----------------------------- */
@@ -12,6 +26,10 @@
 /* ----------------------------- */
 
 @media screen and (min-width: 769px) {
+  .franchiseText {
+    padding: 1rem 10%;
+    margin: 1rem 0rem;
+  }
 }
 
 /* ----------------------------- */
@@ -19,6 +37,10 @@
 /* ----------------------------- */
 
 @media screen and (min-width: 1024px) {
+  .franchiseText {
+    padding: 1rem 15%;
+    margin: 1rem 0rem;
+  }
 }
 
 /* ----------------------------- */

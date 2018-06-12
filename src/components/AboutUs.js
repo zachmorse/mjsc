@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../css/about.css';
 
 import mjscLogo from '../assets/graphics/mjscLogo.png';
-import jamesPicken from '../assets/graphics/jamespicken.png';
+// import jamesPicken from '../assets/graphics/jamespicken.png';
 
 export default class AboutUs extends Component {
   render() {
@@ -43,7 +43,7 @@ export default class AboutUs extends Component {
             </p>
             <h3 className="has-text-white is-size-4">
               With Mt. Juliet Soccer Club, Picken wants to start with children 3-5 years old and
-              teach them fundamentals first.
+              teach them the fundamentals first, and foremost.
             </h3>
             <p>
               Eventually, he plans to work with older players, as well.{' '}

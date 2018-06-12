@@ -1,0 +1,63 @@
+/* ----------------------------- */
+/* ------- MOBILE Layout ------- */
+/* ----------------------------- */
+.scholarshipsBackground {
+  background-image: url('../assets/graphics/ambitious-creative-co-rick-barrett-110145-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed;
+}
+
+.scholarshipText {
+  padding: 1rem 5%;
+  margin: 0rem;
+  color: white;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homeLogoControl {
+  width: 70%;
+  max-width: 250px;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.bulletPoints {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* ----------------------------- */
+/* ------- TABLET Layout ------- */
+/* ----------------------------- */
+
+@media screen and (min-width: 769px) {
+}
+
+/* ----------------------------- */
+/* ------- DESKTOP Layout ------ */
+/* ----------------------------- */
+
+@media screen and (min-width: 1024px) {
+}
+
+/* ----------------------------- */
+/* ------- WIDESCREEN Layout --- */
+/* ----------------------------- */
+
+@media screen and (min-width: 1216px) {
+}
+
+/* ----------------------------- */
+/* ------- FULL HD Layout ------ */
+/* ----------------------------- */
+
+@media screen and (min-width: 1408px) {
+}

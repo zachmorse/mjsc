@@ -1,0 +1,42 @@
+/* ----------------------------- */
+/* ------- MOBILE Layout ------- */
+/* ----------------------------- */
+
+.sponsorshipContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.sponsorshipInfo {
+  width: 75%;
+}
+
+/* ----------------------------- */
+/* ------- TABLET Layout ------- */
+/* ----------------------------- */
+
+@media screen and (min-width: 769px) {
+}
+
+/* ----------------------------- */
+/* ------- DESKTOP Layout ------ */
+/* ----------------------------- */
+
+@media screen and (min-width: 1024px) {
+}
+
+/* ----------------------------- */
+/* ------- WIDESCREEN Layout --- */
+/* ----------------------------- */
+
+@media screen and (min-width: 1216px) {
+}
+
+/* ----------------------------- */
+/* ------- FULL HD Layout ------ */
+/* ----------------------------- */
+
+@media screen and (min-width: 1408px) {
+}

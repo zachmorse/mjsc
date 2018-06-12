@@ -2,21 +2,32 @@
 /* --- INITIAL MOBILE Layout --- */
 /* ----------------------------- */
 
-.masterBackgroundAbout {
-  /* background-image: url('../assets/graphics/phil-goodwin-96377-unsplash.jpg'); */
-  /* background-image: url('../assets/graphics/juanma-batz-261226-unsplash.jpg'); */
+/* .masterBackgroundAbout {
   background-image: url('../assets/graphics/wuilmar-matias-morales-591943-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat !important;
   background-attachment: fixed;
   margin-top: 64px !important;
+  max-width: 1344px;
+} */
+
+.masterBackgroundAbout {
+  background-image: url('../assets/graphics/wuilmar-matias-morales-591943-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed;
+  background-attachment: center center;
+  margin-top: 64px !important;
+  max-width: 1344px;
+  height: 100%;
+  width: 100%;
 }
 
 .aboutUsOverlayControl {
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
-  padding: 2rem 20%;
+  padding: 2rem 8%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,6 +59,10 @@
   .homeLogoControl {
     max-width: 300px;
   }
+
+  .aboutUsOverlayControl {
+    padding: 2rem 10%;
+  }
 }
 
 /* ----------------------------- */
@@ -57,6 +72,10 @@
 @media screen and (min-width: 1024px) {
   .homeLogoControl {
     max-width: 400px;
+  }
+
+  .aboutUsOverlayControl {
+    padding: 2rem 15%;
   }
 }
 
