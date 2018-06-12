@@ -12,7 +12,7 @@
   padding: 1rem 5%;
   margin: 0rem;
   color: white;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
   display: flex;
@@ -20,11 +20,16 @@
   flex-direction: column;
 }
 
-.homeLogoControl {
+.scholarshipLogoControl {
   width: 70%;
   max-width: 250px;
   margin-bottom: 1rem;
   margin-top: 2rem;
+}
+
+.listCentering {
+  display: flex;
+  justify-content: center;
 }
 
 .bulletPoints {
@@ -39,6 +44,9 @@
 /* ----------------------------- */
 
 @media screen and (min-width: 769px) {
+  .scholarshipLogoControl {
+    max-width: 300px;
+  }
 }
 
 /* ----------------------------- */
@@ -46,6 +54,9 @@
 /* ----------------------------- */
 
 @media screen and (min-width: 1024px) {
+  .scholarshipLogoControl {
+    max-width: 400px;
+  }
 }
 
 /* ----------------------------- */

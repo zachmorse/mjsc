@@ -7,7 +7,7 @@ export default class Scholarships extends Component {
     return (
       <div className="section hero is-fullheight is-paddingless scholarshipsBackground">
         <div className="scholarshipText">
-          <img src={mjscLogo} className="homeLogoControl" alt="" />
+          <img src={mjscLogo} className="scholarshipLogoControl" alt="" />
           <div className="content has-text-centered">
             <h1 className="is-size-2 is-size-4-mobile has-text-white">
               World Wide Scholarships for Soccer Players
@@ -27,17 +27,19 @@ export default class Scholarships extends Component {
               </a>{' '}
             </p>
             <div className="bulletPoints">
-              <ul>
-                <li>You must have good standards at your high school or college</li>
-                <li>Must be a skilled player</li>
-                <li>You must submit a video of yourself playing and demonstrating your skills</li>
-                <li>NOTE: there is a charge for finding you a university</li>
-              </ul>
+              <div className="listCentering">
+                <ul>
+                  <li>You must have good standards at your high school or college</li>
+                  <li>Must be a skilled player</li>
+                  <li>You must submit a video of yourself playing and demonstrating your skills</li>
+                  <li>NOTE: there is a charge for finding you a university</li>
+                </ul>
+              </div>
             </div>
             <div className="content">
               <p className="is-size-5-tablet bulletList">
                 <span className="">
-                  Contact Us <i class="far fa-futbol"> </i>
+                  Contact Us <i className="far fa-futbol"> </i>
                 </span>
                 {'  '}
                 P.O Box 863, Mount Juliet, TN 37122
@@ -46,7 +48,7 @@ export default class Scholarships extends Component {
                 615-603-0785{' '}
                 <span className="">
                   {' '}
-                  <i class="far fa-futbol" />
+                  <i className="far fa-futbol" />
                 </span>{' '}
                 <a
                   className="has-text-white"

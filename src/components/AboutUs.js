@@ -69,10 +69,8 @@ export default class AboutUs extends Component {
             </p>
             <h3 className="has-text-white is-size-4">
               <span className="is-italic">
-                “People sign up for these things and the kids don’t like it,"{' '}
-              </span>said Picken.{' '}
-              <span className="is-italic">
-                “We want to really make it enthusiastic and enjoyable for them."
+                “People sign up for these things and the kids don’t like it. We want to really make
+                it enthusiastic and enjoyable for them."
               </span>
             </h3>
             <p>
