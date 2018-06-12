@@ -13,8 +13,8 @@ export default class Scholarships extends Component {
               World Wide Scholarships for Soccer Players
             </h1>
             <h3 className="is-size-3 is-size-5-mobile has-text-white">
-              Would you like a scholarship playing soccer in the USA? MJSC can help you achieve your
-              goals.
+              Would you like a scholarship playing soccer in the USA? Mount Juliet Soccer Club can
+              help you achieve your goals.
             </h3>
             <p className="is-size-5 is-size-6-mobile has-text-white georgiaFont">
               Contact James Picken for an inquiry at{' '}
